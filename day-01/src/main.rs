@@ -1,5 +1,4 @@
 use std::fs;
-use std::ops::Add;
 
 fn main() {
     // File input
@@ -34,9 +33,9 @@ fn part_02(contents: &Vec<&str>) {
 
     loop {
         if index + 2 < contents.len() as u16 {
-            let mut one: u16 = contents.get(index as usize).unwrap().to_string().parse().unwrap();
-            let mut two: u16 = contents.get(index as usize + 1).unwrap().to_string().parse().unwrap();
-            let mut three: u16 = contents.get(index as usize + 2).unwrap().to_string().parse().unwrap();
+            let one: u16 = contents.get(index as usize).unwrap().to_string().parse().unwrap();
+            let two: u16 = contents.get(index as usize + 1).unwrap().to_string().parse().unwrap();
+            let three: u16 = contents.get(index as usize + 2).unwrap().to_string().parse().unwrap();
 
             println!("{} {} {}", one, two, three);
 
